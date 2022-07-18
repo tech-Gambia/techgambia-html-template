@@ -1,0 +1,11 @@
+.slideshow {
+    &.flickity-resize {
+        .slideshow-slide {
+            min-height: 100%;
+        }
+    }
+
+    .slideshow-slide {
+        width: 100%;
+    }
+}

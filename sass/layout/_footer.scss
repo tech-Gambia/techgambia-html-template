@@ -1,0 +1,15 @@
+.footer {
+    padding: 20px 0;
+
+    .footer-credits {
+        align-items: flex-end;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+
+        @include until($tablet) {
+            align-items: flex-start;
+            flex-flow: column;
+        }
+    }
+}

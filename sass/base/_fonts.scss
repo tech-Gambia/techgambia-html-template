@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,400;1,700&family=Playfair+Display&display=swap');
+[class^="icon-social"] {
+    &:before {
+        @include font-icon;
+    }
+
+    &[href*="facebook"]:before,
+    &.icon-facebook:before {
+        @extend .icon-facebook:before !optional;
+    }
+
+    &[href*="instagram"]:before,
+    &.icon-instagram:before {
+        @extend .icon-instagram:before !optional;
+    }
+
+    &[href*="linkedin"]:before,
+    &.icon-linkedin:before {
+        @extend .icon-linkedin:before !optional;
+    }
+
+    &[href*="pinterest"]:before,
+    &.icon-pinterest:before {
+        @extend .icon-pinterest:before !optional;
+    }
+
+    &[href*="twitter"]:before,
+    &.icon-twitter:before {
+        @extend .icon-twitter:before !optional;
+    }
+
+    &[href*="youtube"]:before,
+    &.icon-youtube:before {
+        @extend .icon-youtube:before !optional;
+    }
+}

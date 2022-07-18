@@ -1,0 +1,71 @@
+/*
+/// VENDORS ///
+The CSS files from external libraries and frameworks
+*/
+@import "vendors/normalize";
+@import "vendors/flickity";
+
+/*
+/// ABSTRACTS ///
+all Sass tools and helpers used across the project.
+Every global variable, function, mixin and placeholder should be put in here.
+ */
+@import "abstracts/variables";
+@import "abstracts/mixins";
+
+/*
+/// BASE ///
+The boilerplate code for the project. In there, you might find some typographic
+rules, and probably a stylesheet defining some standard styles for commonly
+used HTML elements.
+*/
+@import "base/icons"; // DO NOT MODIFY THIS FILE! IT IS AUTO-GENERATED!
+@import "base/typography";
+@import "base/fonts";
+@import "base/utilities";
+
+/*
+/// LAYOUT ///
+Everything that takes part in laying out the site or application.
+This folder could have stylesheets for the main parts of the site (header,
+footer, navigation, sidebar…), the grid system or even CSS styles
+for all the forms.
+*/
+@import "layout/header";
+@import "layout/footer";
+@import "layout/navigation";
+@import "layout/grid";
+@import "layout/forms";
+@import "layout/tables";
+@import "layout/slideshow";
+@import "layout/sections";
+@import "layout/items";
+
+/*
+/// COMPONENTS ///
+For smaller components, there is the components/ folder.
+While layout/ is macro (defining the global wireframe), components/ is more
+focused on widgets. It contains all kind of specific modules like a slider,
+a loader, a widget, and basically anything along those lines. There are usually
+a lot of files in components/ since the whole site/application should be mostly
+composed of tiny modules.
+*/
+@import "components/buttons";
+@import "components/hamburger";
+@import "components/accordion";
+@import "components/tabs";
+
+::selection {
+    background: #b3d4fc;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}

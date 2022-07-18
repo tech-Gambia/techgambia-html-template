@@ -1,0 +1,79 @@
+nav ul,
+.menu {
+    list-style: none;
+    padding: 0;
+}
+
+.main-nav {
+    color: white;
+
+    @include until($small-tablet) {
+        -webkit-overflow-scrolling: touch;
+        background: white;
+        color: black;
+        height: 100%;
+        left: 0;
+        opacity: 0;
+        overflow-y: auto;
+        padding: #{$mobile-header-height} 0;
+        position: fixed;
+        right: 0;
+        top: 0;
+        transition: opacity 350ms ease, visibility 350ms ease;
+        visibility: hidden;
+        width: 100%;
+        z-index: 100;
+
+        .is-open-menu & {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        &.is-active {
+            height: 100%;
+        }
+    }
+
+    .menu {
+        display: flex;
+        flex-flow: row wrap;
+        list-style: none;
+        margin: 0 -15px;
+        padding: 0;
+
+        @include until($small-tablet) {
+            flex-direction: column;
+            text-align: center;
+            margin: 0;
+            min-height: 100%;
+            justify-content: center;
+        }
+
+        .menu-item {
+            margin: 0 15px;
+            text-transform: uppercase;
+
+            @include until($small-tablet) {
+                margin: 20px 0;
+            }
+
+            a {
+                font-size: 18px;
+                font-weight: 400;
+                color: inherit;
+
+                &:hover {
+                    color: #d1d1d1;
+                }
+            }
+        }
+    }
+
+    .sub-menu {
+        display: none;
+    }
+
+    .open-submenu > .sub-menu {
+        display: block;
+    }
+}

@@ -1,0 +1,38 @@
+%button {
+    background-color: $button-color;
+    border-radius: 0;
+    border: 1px solid $button-color;
+    color: $button-text-color;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    outline: 0;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+}
+
+input[type="submit"],
+input[type="button"],
+input[type="reset"],
+button,
+.button {
+    @extend %button;
+
+    &:hover {
+        // background-color: darken($button-color, 12.5%);
+        color: #D9AE54
+    }
+}
+
+.button-secondary {
+    @extend %button;
+    background-color: #fff;
+    border-color: $brand-color;
+    color: $brand-color;
+
+    &:hover {
+        // background-color: darken(#fff, 12.5%);
+        color: #D9AE54;
+    }
+}
