@@ -76,7 +76,7 @@
         }
 
         .offset-#{$i} {
-            margin-left: calc(100% / (#{$grid-columns} / #{$i}));
+            // margin-left: calc(100% / (#{$grid-columns} / #{$i}));
         }
     }
 }

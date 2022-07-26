@@ -1,23 +1,24 @@
-$font-family-base: 'Playfair Display', serif;
+$font-family-base: 'Source Sans Pro', sans-serif;
 $font-family-alt: "Arial", sans-serif;
 $font-family: 'Montserrat', sans-serif;
 $icon-family-base: "ThemeIcons";
 
-$font-size-base: 19px;
+$font-size-base: 16px;
 $line-height-base: 1.3;
 
-$text-color: #ffffff;
+$text-color: #b1c0d4;
+$text-color-alt: #ffffff;
 $link-color: inherit;
-
-$headings-font-family: $font-family-base;
+$decoration-color: #181818;
+$headings-font-family: $font-family;
 $headings-font-weight: 400;
 $headings-line-height: 1.3;
 $headings-color: inherit;
 
-$brand-color: #ffffff;
-$brand-color-alt: #ffffff;
+$brand-color: #27282C;
+$brand-color-alt: #F30842;
 
-$button-color: $brand-color;
+$button-color: $brand-color-alt;
 $button-text-color: #ffffff;
 
 // viewport & screen sizes

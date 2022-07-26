@@ -25,18 +25,22 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-family: $icon-family-base;
+    content: "\f101";
 }
 
 @mixin placeholder {
     ::-webkit-input-placeholder {
         @content;
     }
+
     :-moz-placeholder {
         @content;
     }
+
     ::-moz-placeholder {
         @content;
     }
+
     :-ms-input-placeholder {
         @content;
     }
@@ -54,4 +58,13 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+@mixin menu-decoration {
+    content: "...";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    letter-spacing: 5px;
 }
